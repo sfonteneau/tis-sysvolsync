@@ -1,6 +1,6 @@
 %define _topdir   .
 %define buildroot ./builddir
-%define sysvolsync_version %(python3 ../sysvolsync.py -V)
+%define sysvolsync_version %(grep -o  -P "(?<=__version__ = ').*(?=')" ../sysvolsync.py)
 
 Name:	tis-sysvolsync
 Version:    %(python3 ../sysvolsync.py -V)
