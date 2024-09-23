@@ -63,7 +63,6 @@ from samba.dcerpc.security import dom_sid
 from samba.ndr import ndr_pack, ndr_unpack
 from samba.param import LoadParm
 from samba.samdb import SamDB
-from samba.netcmd.user import GetPasswordCommand
 import optparse
 import samba.getopt as options
 
