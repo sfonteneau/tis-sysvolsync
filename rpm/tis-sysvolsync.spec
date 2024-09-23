@@ -3,7 +3,7 @@
 %define sysvolsync_version %(grep -o  -P "(?<=__version__ = ').*(?=')" ../sysvolsync.py)
 
 Name:	tis-sysvolsync
-Version:    %(python3 ../sysvolsync.py -V)
+Version:    %(grep -o  -P "(?<=__version__ = ').*(?=')" ../sysvolsync.py)
 Release:	1%{?dist}
 Summary:	Sysvol sync for samba4
 BuildArch:	x86_64
